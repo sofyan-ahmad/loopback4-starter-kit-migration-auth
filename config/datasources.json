@@ -5,9 +5,9 @@
   },
   "mainDB": {
     "driver": "pg",
-    "user": { "ENV": "EXCELLERIFY_DB_USER" },
-    "password": { "ENV": "EXCELLERIFY_DB_PASSWORD" },
-    "host": { "ENV": "EXCELLERIFY_DB_HOST" },
-    "database": { "ENV": "EXCELLERIFY_DB_NAME" }
+    "user": { "ENV": "LB4_DB_USER" },
+    "password": { "ENV": "LB4_DB_PASSWORD" },
+    "host": { "ENV": "LB4_DB_HOST" },
+    "database": { "ENV": "LB4_DB_NAME" }
   }
 }
