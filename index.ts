@@ -1,7 +1,7 @@
-import { KelolaCorporate } from "./src/application";
+import { MyApplication } from "./src/application";
 import { RestServer } from "@loopback/rest";
 
-const app = new KelolaCorporate();
+const app = new MyApplication();
 
 app
   .start()

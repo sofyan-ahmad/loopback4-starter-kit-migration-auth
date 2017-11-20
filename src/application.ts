@@ -11,7 +11,7 @@ import { DataSourceConstructor } from "@loopback/repository";
 import { authStrategyProvider } from "./providers/authStrategy";
 import { MySequence } from "./sequence";
 
-export class KelolaCorporate extends Application {
+export class MyApplication extends Application {
   constructor(options?: ApplicationConfig) {
     // Allow options to replace the defined components array, if desired.
     options = Object.assign(

@@ -1,12 +1,12 @@
 import {createClientForHandler, expect, supertest} from '@loopback/testlab';
 import {RestServer} from '@loopback/rest';
-import {KelolaCorporate} from '../../src/application';
+import {MyApplication} from '../../src/application';
 import {UserRepositories} from '../../src/repositories/index';
 import {givenTodo} from '../helpers';
 import {User} from '../../src/models/index';
 
 describe('Application', () => {
-  let app: KelolaCorporate;
+  let app: MyApplication;
   let server: RestServer;
   let client: supertest.SuperTest<supertest.Test>;
   let todoRepo: UserRepositories;
@@ -99,7 +99,7 @@ describe('Application', () => {
    ============================================================================
    */
   function givenAnApplication() {
-    app = new KelolaCorporate({
+    app = new MyApplication({
       rest: {
         port: 0
       },
