@@ -11,8 +11,7 @@
     "build": "lb-tsc && lb-tslint",
     "test": "npm run build && mocha \"./dist/test/**/*.test.js\"",
     "migrate:up": "db-migrate up --config config/datasources.json -e mainDB",
-    "migrate:create":
-      "db-migrate --config config/datasources.json -e mainDB create"
+    "migrate:create": "db-migrate --config config/datasources.json -e mainDB create"
   },
   "license": "MIT",
   "dependencies": {
@@ -20,7 +19,7 @@
     "@loopback/core": "^4.0.0-alpha.16",
     "@loopback/repository": "^4.0.0-alpha.10",
     "@loopback/rest": "^4.0.0-alpha.3",
-    "@types/passport": "^0.3.4",
+    "@types/passport": "^0.3.5",
     "@types/passport-http": "^0.3.3",
     "@types/passport-http-bearer": "^1.0.31",
     "@types/sinon": "^2.3.6",
@@ -35,7 +34,7 @@
     "@loopback/build": "^4.0.0-alpha.3",
     "@loopback/testlab": "^4.0.0-alpha.9",
     "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.34",
+    "@types/node": "^8.0.53",
     "db-migrate-pg": "^0.2.5",
     "mocha": "^4.0.1",
     "typedoc": "^0.9.0",
